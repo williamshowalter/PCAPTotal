@@ -45,12 +45,6 @@ pip install pyasn1
 
 Install
 ^^^^^^^
-Gentoo users:
--------------
-You should first enable the `Abnorm Overlay <https://www.abnorm.org/portage/>`_ then you can install it::
-
-	emerge tcpextract
-
 -----------------------------------------
 
 To install from git please run::
