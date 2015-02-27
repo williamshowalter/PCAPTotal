@@ -23,11 +23,15 @@ Requirements
 ^^^^^^^^^^^^
 * Python 2.5 or Python 3 or later
 * pynids (http://jon.oberheide.org/pynids/)
-* a VirusTotal.com API key, set in the config file before install.
+
+*********
+* a VirusTotal.com API key, set in /usr/local/VirusTotalAPI/config.ini file.
+Can set config file before install.
+
+*********
+
 
 VIRUS TOTAL MAY RETURN SSL ERRORS IF THE FOLLOWING ARE NOT PRESENT:
-
-
 apt-get install libpcap-dev pkg-config python-dev libgtk2.0-dev libnet1-dev libnids1.21 libnids-dev
 
 Install pynids-0.6.1 from source (Ubuntu repo build has errors, other repos may or may not)

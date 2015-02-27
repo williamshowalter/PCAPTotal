@@ -1,6 +1,9 @@
 __author__ = 'Travis'
 import requests
 from ConfigParser import SafeConfigParser
+from pkg_resources import Requirement, resource_filename
+import os
+from os import sys
 
 # Following block resolves bug in python2 trying to establish SSLv23 by default, where not supported
 from requests.adapters import HTTPAdapter
@@ -16,7 +19,7 @@ class MyAdapter(HTTPAdapter):
 
 class VirusTotalApi(object):
     parser = SafeConfigParser()
-    parser.read('config.ini')
+    parser.read(os.path.join('/usr/local/VirusTotalAPI','config.ini'))
     key = parser.get('VirusTotalAPIKey','api_key')
     url = 'https://www.virustotal.com/vtapi/v2/'
     session = None
