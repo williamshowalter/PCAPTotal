@@ -61,7 +61,7 @@ Live sniffing is really slow. If you can, use tcpdump or something else to captu
 
 If you want further information on how to change default behavior please run::
 
-	$ pcaptotal-run --help
+	$ pcaptotal --help
 
 Licensing
 ^^^^^^^^^
